@@ -30,6 +30,11 @@ SERVERS=(
     # Add up to 100 servers here
 )
 
+jjcdhh cnnjncb
+ncjjb cnjnjjmn
+ncjkkkkkkkkkkkmmm
+nckkkkkknmnccmmmcm
+
 # Command to run on all servers
 COMMAND="uptime"  # Change this to the command you want to execute
 

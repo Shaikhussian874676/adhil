@@ -1,0 +1,43 @@
+
+#!/bin/bash
+#!/bin/bash
+
+# Define the list of 100 servers
+SERVERS=(
+    "server1.example.com"
+    "server2.example.com"
+    "server3.example.com"
+    # Add up to 100 servers here
+)
+
+# Command to run on all servers
+COMMAND="uptime"  # Change this to the command you want to execute
+
+# Loop through each server and execute the command
+for SERVER in "${SERVERS[@]}"; do
+    echo "Executing on $SERVER..."
+    ssh -o StrictHostKeyChecking=no user@$SERVER "$COMMAND" &
+done
+
+wait
+echo "All commands executed."
+
+# Define the list of 100 servers
+SERVERS=(
+    "server1.example.com"
+    "server2.example.com"
+    "server3.example.com"
+    # Add up to 100 servers here
+)
+
+# Command to run on all servers
+COMMAND="uptime"  # Change this to the command you want to execute
+
+# Loop through each server and execute the command
+for SERVER in "${SERVERS[@]}"; do
+    echo "Executing on $SERVER..."
+    ssh -o StrictHostKeyChecking=no user@$SERVER "$COMMAND" &
+done
+
+wait
+echo "All commands executed."
